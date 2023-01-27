@@ -1,0 +1,132 @@
+
+.login_content {
+		margin-top: -50px;
+		padding: 25px 0 0;
+		position: relative;
+		text-align: center;
+		text-shadow: 0 1px 0 #fff;
+		min-width: 280px;
+}
+
+input, select, label {
+	 border-radius: 10px !important;
+}
+
+body {
+	background: $cor_background_padrao;
+	color: #000;
+}
+.left_col {
+	background: $cor_background_padrao;
+}
+.nav_title {
+	background: $cor_background_padrao;
+}
+.sidebar-footer {
+	background: $cor_background_padrao;
+}
+.sidebar-footer a {
+	background: $cor_background_padrao_footer;
+}
+
+.fas {
+	font-size: 20px !important;
+	padding-right: 10px !important;
+}
+
+.login_content h1:before,
+.login_content h1:after {
+	content: "";
+	/*height: 1px;*/
+	position: absolute;
+	top: 10px;
+	width: 27%;
+}
+
+.login_content h1:before,
+.login_content h1:after {
+	/*content: "";*/
+	/*height: 1px;*/
+	position: absolute;
+	top: 50px;
+	width: 20%;
+}
+
+.form-control:focus {
+	-webkit-box-shadow: 1px 1px 20px -3px #2A3F54 !important;
+	-moz-box-shadow:    1px 1px 20px -3px #2A3F54 !important;
+	box-shadow:         1px 1px 40px -3px #2A3F54 !important;
+}
+
+
+.tile_count {
+	margin-bottom: 20px;
+	margin-top: 0px;
+}
+
+.tile_count .tile_stats_count .count {
+   font-size: 30px;
+}
+
+.count_top .fas {
+	font-size: 15px !important;
+	padding-right: 0px !important;
+}
+
+.count {
+   font-size: 20px!important;
+}
+
+
+//retira o risco no h1 do login
+.login_content h1:before, .login_content h1:after {
+	width: 0%;
+}
+
+.tile_count .tile_stats_count {
+	text-align: center;
+}
+
+.btn-round {
+	border-radius: 10px;
+	width:100px;
+}
+
+.panel-heading {
+	padding: 3px 15px;
+	border-bottom: 1px solid transparent;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+
+}
+
+.panel-body {
+    padding: 2px;
+}
+
+
+input, select, label {
+	border-radius: 10px !important;
+	height: 30px !important;
+	padding: 5px 10px !important;
+	font-size: 13px !important;
+	line-height: 1.5 !important;
+}
+
+/* .dataTables_filter {
+	width: 50% !important;
+	float: right;
+	text-align: right;
+}
+ */
+label.error {
+    color: #ff0000;
+    
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 0 0; 
+  margin-top: 1px \9;
+  line-height: normal;
+}

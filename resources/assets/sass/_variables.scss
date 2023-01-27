@@ -1,0 +1,7 @@
+
+$cor_background_padrao: #342a54;
+$cor_texto_padrao:  #342a54;
+
+//$cor_background_padrao_footer: #23174a;
+//$cor_background_padrao_footer: $cor_background_padrao - 20;
+$cor_background_padrao_footer: adjust_color($cor_background_padrao, $red: -20, $green: -20, $blue: -20);

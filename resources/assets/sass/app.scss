@@ -1,0 +1,260 @@
+// Fonts
+// @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+/* //fonts
+@import url("../vendor/fonts_googleapis.css");*/
+@import url("https://use.fontawesome.com/releases/v5.11.2/css/all.css"); 		 
+
+
+/* @import url("https://cdn.jsdelivr.net/npm/timepicker@1.11.14/jquery.timepicker.min.css"); */
+@import url("../vendor/jquery.timepicker.min.css");
+
+@import url("http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css");
+//@import url("../vendor/jquery-ui.css");
+
+// Bootstrap
+$icon-font-path: "/fonts/bootstrap/";
+@import "vendor/twbs/bootstrap-sass/assets/stylesheets/_bootstrap";
+
+// font-awesome
+@import "~gentelella/vendors/font-awesome/scss/font-awesome";
+
+// Animate CSS
+@import "~gentelella/vendors/animate.css/animate";
+
+// PNotify
+@import "~gentelella/vendors/pnotify/dist/pnotify.css";
+// @import '~gentelella/vendors/pnotify/dist/pnotify.buttons.css';
+
+// Gentelella
+@import "~gentelella/src/scss/custom";
+
+// alterações no gentelella
+@import "alt_gentelella.scss";
+
+// BTNs QUE EU CRIEI
+@import "btns_novos.scss";
+
+// timeline
+@import "../vendor/bootstrap-responsive-timeline/scss/timeline.scss";
+
+// https://lokesh-coder.github.io/pretty-checkbox/
+//@import '../css/pretty-checkbox.min.css';
+
+// .navbar-laravel {
+//   background-color: #fff;
+//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+// }
+
+.logo_topo {
+  width: 315px;
+  margin-top: 20px;
+  border: 4px solid #bfa15f;
+  border-radius: 15px;
+  border-bottom-left-radius: 0px;
+}
+
+.cor_fundo_roxo {
+  background: #342a54 !important;
+}
+.cor_texto_roxo {
+  color: #342a54 !important;
+}
+
+.fas-tabela {
+  font-size: 12px !important;
+  padding: 2px !important;
+}
+
+.fonte_dourada {
+  color: #bfa15f;
+}
+
+.combustiveis {
+  padding-right: 4px !important;
+  padding-left: 4px !important;
+  text-align: right;
+}
+
+.tabela_abastecimentos {
+  width: 100% !important;
+}
+
+.tabela_compacta td {
+  font-size: 12px !important;
+  padding-bottom: 2px !important;
+  padding-top: 2px !important;
+  vertical-align: middle !important;
+}
+
+.embreve {
+  color: $cor_texto_padrao;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.botao_acao {
+  margin-right: 1px;
+}
+
+.input_data {
+  padding-left: 2px;
+  padding-right: 1px;
+}
+
+.padding00 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* altera o loading do datatables */
+.dataTables_wrapper .dataTables_processing {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 30%;
+  height: 40px;
+  margin-left: -20%;
+  margin-top: -25px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  background: $cor_background_padrao;
+  color: white;
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+/* fim */
+
+.site_title i {
+  border: 1px solid #EAEAEA;
+  padding: 8px!important;
+  border-radius: 50%;
+}
+
+
+.rodape {
+  padding: 15px 20px;
+  display: block;
+  margin-left: 0px;
+  text-align: center;
+  padding-top: 260px;
+}
+
+.input_sem_label {
+  padding-top: 26px;
+  
+}
+
+.datas_input{
+  padding-right: 0px!important;
+  padding-left: 6px!important;
+  
+}
+
+.swal2-popup.swal2-toast .swal2-title {
+  flex-grow: 1;
+  justify-content: flex-start;
+  margin: 0 .6em;
+  font-size: 1.6em!important;
+}
+
+.btn_adiciona{
+  margin-top: 30px;
+  padding: 4px;
+  border-radius: 10px;
+}
+.dados_processo{
+  margin: 0px;
+  line-height: 1.5 !important;
+}
+
+.logindiv{
+  right: 0px; 
+  margin: 0px auto; 
+  margin-top: 3%; 
+  max-width: 570px; 
+  position: relative; 
+} 
+
+.label_card_proc{
+  background-color: #eeeeee;
+  border-radius: 10px !important;
+  height: 30px !important;
+  padding: 5px 10px !important;
+  font-size: 12px !important;
+  line-height: 1.5 !important;
+  border: 1px solid #ccc;
+}
+
+.label_processo_peticiona{
+  margin-bottom: 0px!important;
+  padding-top: 3px!important;
+}
+
+.tr-peticiona{
+  font-size: 11px!important; 
+  padding: 3px!important;
+}
+
+.botoes{
+  border-radius: 10px!important;
+}
+
+.junto_timeline {
+  margin-left: 5px;
+  margin-bottom: 2px;
+  font-size: 12px;
+}
+
+.label_campo{
+  padding: 0px 5px !important;
+  font-size: 11px !important;
+}
+.label_dado{
+  padding: 0px 5px !important;
+  font-size: 11px !important;
+  color: rgb(32, 32, 167);
+}
+
+.fundo{
+  background-color: #eeeeee;
+  border-radius: 10px !important;
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+  border: 1px solid #ccc;
+}
+
+.td.wrapok {
+  word-wrap:break-word!important;
+}
+
+.text-wrap{
+  white-space:pre-wrap;
+}
+.width-td{
+  width:300px;
+}
+
+.titulo_sistema{
+  color: $cor_texto_padrao;  
+  font-size: 25px;
+  text-align: center!important;
+}
+
+.imagem_centro{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+

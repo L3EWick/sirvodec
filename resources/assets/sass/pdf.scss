@@ -1,0 +1,476 @@
+
+// Bootstrap
+$icon-font-path: "/fonts/bootstrap/";
+@import "vendor/twbs/bootstrap-sass/assets/stylesheets/_bootstrap";
+
+//datatables 
+@import url("https://cdn.datatables.net/v/zf/dt-1.10.18/r-2.2.2/datatables.min.css");
+
+
+body {
+  background: #999;
+  font-family: "Arial";
+  margin-top: 1rem;
+  counter-reset: section;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3.pag {
+  display: none;
+  position: absolute;
+  page-break-before: always;
+  page-break-after: always;
+  bottom: 0;
+  right: 0;
+  font-size: 0.950rem;
+  font-weight: 300;
+}
+
+h3::before {
+  position: relative;
+  bottom: -10px;
+}
+
+table.dataTable.no-footer {
+  border-bottom: 1px solid #111;
+}
+
+table.dataTable,
+table.dataTable th,
+table.dataTable td {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+  border-bottom: thin solid;
+  text-align: center;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+  text-align: center;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+table.dataTable {
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
+  /* border-collapse: separate; */
+  border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+table td {
+  border-bottom: thin solid;
+}
+
+.page-footer {
+  text-align: center;
+}
+
+table.separate {
+  border-collapse: separate;
+  border-spacing: 20pt;
+  
+}
+td{
+    padding: 4px;
+}
+.container{
+   justify-content: flex-start;
+}
+
+
+.box {
+  max-width: 100%;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn.btn-app {
+  padding: 15px 5px;
+  margin: 0 0 10px 10px;
+  min-width: 80px;
+  height: 60px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  text-align: center;
+  color: #666;
+  border: 1px solid #ddd;
+  background-color: #fafafa;
+  font-size: 12px;
+}
+
+.btn.btn-app > .fa,
+.btn.btn-app > .glyphicon,
+.btn.btn-app > .ion {
+  font-size: 20px;
+  display: block;
+}
+
+.btn.btn-app:hover {
+  background: #f4f4f4;
+  color: #444;
+  border-color: #aaa;
+}
+
+.btn.btn-app:active,
+.btn.btn-app:focus {
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.btn.btn-app > .badge {
+  position: absolute;
+  top: -3px;
+  right: -10px;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("/fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+}
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.glyphicon-print:before {
+    content: "\E045";
+}
+
+.clear-fix {
+  clear: both
+}
+
+.float {
+  float: left;
+  width: 20%
+}
+
+.data-hora {
+  float:        right;
+  margin-top:   5px;
+  margin-right: -4rem;
+  width:        20%;
+  font-size:    0.625rem;
+}
+
+.brasao{
+  float: left;
+  width: 110px;
+  margin-left: 10px;
+}
+
+.head {
+  width: 85%;
+}
+
+.print {
+  position: fixed;
+  top: 1rem;
+}
+
+.print_confirma {
+  position: fixed;
+  top: 6rem;
+}
+
+.print_confirma {
+  position: fixed;
+  top: 6rem;
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  margin-right: 80px;
+  border-collapse: collapse;
+  font-size: 0.625rem;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #EEE !important;
+}
+
+.titulo1 {
+  display: block; 
+  font-weight: bold;
+  //font-size: 1.5625rem;
+  font-size: 28px;
+  width: 100%;
+  text-align: center;
+  font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+}
+
+.titulo2 p {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+  margin: 0px;
+}
+
+.titulo3 {
+  display: block; 
+  width: 100%;
+  font-size: 15px;
+  font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+  //text-indent: 2.5em;
+  text-align: justify;
+  margin-top: 50px;
+
+}
+
+.titulo_documento_centralizado {
+  display: block; 
+  width: 100%;
+  font-size: 15px;
+  font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+
+
+page {
+  background: white;
+  border-radius: 3px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  padding: 0.5cm 0.5cm 1cm;
+  -webkit-box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+}
+
+page[size="A4"] {
+  width: 21cm;
+  /*height: 29.7cm;*/
+}
+
+page[size="A4"][layout="portrait"] {
+  width: 29.7cm;
+  /*height: 21cm;*/
+}
+
+page[size="A3"] {
+  width: 29.7cm;
+  height: 42cm;
+}
+
+page[size="A3"][layout="portrait"] {
+  width: 42cm;
+  height: 29.7cm;
+}
+
+page[size="A5"] {
+  width: 14.8cm;
+  height: 21cm;
+}
+
+page[size="A5"][layout="portrait"] {
+  width: 21cm;
+  height: 14.8cm;
+}
+
+/*@page {
+  margin-bottom: 25mm;
+}*/
+
+@media print {
+
+  body,
+  page {
+    -webkit-box-shadow: 0;
+            box-shadow: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+            
+  }
+
+   h3.pag {
+    display: initial;
+  }
+
+  table {
+    page-break-inside: auto;
+    orphans: 3;
+  }
+
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+
+  .print {
+    display: none;
+  }
+  
+  .print_confirma {
+    display: none;
+  }
+
+  .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color:#EEE !important;
+    -webkit-print-color-adjust: exact;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+  .print {
+    left: -0.1rem;
+  }
+  
+  .print_confirma {
+    left: -0.1rem;
+  }
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and down)
+@media (min-width: 992px) {
+  .print {
+    left: 1rem;
+  }
+  
+  .print_confirma {
+    left: 1rem;
+  }
+  
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
+
+
+.texto_inicio_documento {
+  text-indent: 2.5em;
+  text-align: justify;
+  margin-top: 50px;
+  
+}
+
+.dados_processo_documento {
+  padding-top: 20px;
+  margin-left: 20px;
+  
+
+}
+.dados_processo_documento table {
+  padding-top: 10px;
+  background: lightgray;
+}
+
+.dados_processo_documento td {
+  text-align: left;
+  font-size: 13px;
+  margin: 0px;
+  border-bottom: 0px!important;
+  padding-left: 0px;
+  padding-top: 0px;
+}
+
+.dados_corpo_documento {
+  text-indent: 2.5em;
+  text-align: justify;
+  margin-top: 30px;
+}
+
+.termos_deferimento_documento {
+  padding-left: 60px;
+  margin-top: 60px;
+}
+
+.junto {
+  padding: 0px;
+  margin: 0px;
+}
+
+.data_documento {
+  text-align: right;
+}
+
+.assinatura_documento {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  border-top: 1px;
+  border-color: black;
+  border-style: solid;
+  text-align: center;
+}
+
+.p_junto_assinatura {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}

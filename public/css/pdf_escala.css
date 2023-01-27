@@ -1,0 +1,144 @@
+@import url(https://cdn.datatables.net/v/zf/dt-1.10.18/r-2.2.2/datatables.min.css);@page {
+  margin: 2cm;
+  margin-top: 50px;
+  margin-bottom: 110px;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 15px;
+  margin: 2.5cm 0;
+  text-align: justify;
+}
+
+#header {
+  position: fixed;
+  top: -30px;
+  left: 0px;
+  right: 0px;
+  height: 50px;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  color: #000000;
+  font-size: 0.9em;
+}
+
+#footer {
+  bottom: -20px;
+}
+
+.table > thead > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > th,
+.table > tbody > tr > td,
+.table > tfoot > tr > th,
+.table > tfoot > tr > td {
+  padding: 2px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+
+#footer table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+}
+
+#footer td {
+  padding: 0;
+  width: 10%;
+}
+
+.page-footer {
+  text-align: center;
+}
+
+hr {
+  page-break-after: always;
+  border: 0;
+}
+
+table.separate {
+  border-collapse: separate;
+  border-spacing: 20pt;
+}
+
+td {
+  padding: 4px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.container {
+  justify-content: flex-start;
+}
+
+.semsopimagem {
+  margin-top: 1cm;
+  height: 260px !important;
+  width: 260px !important;
+}
+
+.Imangemsemsop {
+  margin: 0 auto !important;
+}
+
+.page-number {
+  text-align: center;
+}
+
+.page-number:before {
+  content: "Pagina " counter(page);
+}
+
+#watermark {
+  position: fixed;
+  bottom: 150px;
+  width: 650px;
+  height: 600px;
+  opacity: .1;
+}
+
+#tb_escala {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tb_escala td,
+#tb_escala th {
+  border: 1px solid #ddd;
+  padding: 6px;
+}
+
+#tb_escala tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#tb_escala tr:hover {
+  background-color: #ddd;
+}
+
+#tb_escala th {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: left;
+  background-color: #342a54;
+  color: white;
+}
+
+.ln_solid {
+  border-top: 1px solid #e5e5e5;
+  color: #ffffff;
+  background-color: #ffffff;
+  height: 1px;
+  margin: 20px 0;
+}
+

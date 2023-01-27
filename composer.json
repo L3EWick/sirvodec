@@ -1,0 +1,76 @@
+{
+  "name": "laravel/laravel",
+  "description": "The Laravel Framework.",
+  "keywords": [
+    "framework",
+    "laravel"
+  ],
+  "license": "MIT",
+  "type": "project",
+  "require": {
+    "php": ">=7.2",
+    "barryvdh/laravel-dompdf": "^0.9.0",
+    "creativeorange/gravatar": "^1.0",
+    "diglactic/laravel-breadcrumbs": "^6.0",
+    "facade/ignition": "^2.0",
+    "fideloper/proxy": "^4.2",
+    "fruitcake/laravel-cors": "^2.0",
+    "fzaninotto/faker": "^1.8",
+    "geekcom/validator-docs": "2.*",
+    "guzzlehttp/guzzle": "7.2",
+    "jarouche/viacep": "^1.0",
+    "labs64/netlicensingclient-php": "^2.3",
+    "laravel-notification-channels/telegram": "^0.5.1",
+    "laravel/framework": "^7.0",
+    "laravel/helpers": "^1.4",
+    "laravel/socialite": "^4.1",
+    "laravel/tinker": "^2.0",
+    "nunomaduro/collision": "^4.1",
+    "owen-it/laravel-auditing": "^10.0",
+    "php-parallel-lint/php-console-color": "^1.0",
+    "twbs/bootstrap-sass": "^3.3",
+    "yajra/laravel-datatables-oracle": "~9.0"
+  },
+  "require-dev": {
+    "mockery/mockery": "1.2.*",
+    "phpunit/phpunit": "^8.5",
+    "barryvdh/laravel-debugbar": "^3.2",
+    "barryvdh/laravel-ide-helper": "^2.6",
+    "doctrine/dbal": "^2.9",
+    "filp/whoops": "^2.3"
+  },
+  "autoload": {
+    "classmap": [
+        "database"
+    ],
+    "psr-4": {
+        "App\\": "app/"
+    },
+    "files": [
+      "app/helpers/geral.php"
+    ]
+  },
+  "autoload-dev": {
+      "psr-4": {
+          "Tests\\": "tests/"
+      }
+  },
+  "scripts": {
+      "post-root-package-install": [
+          "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+      ],
+      "post-create-project-cmd": [
+          "php artisan key:generate"
+      ],
+      "post-autoload-dump": [
+          "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+          "@php artisan package:discover"
+      ]
+  },
+  "config": {
+      "preferred-install": "dist",
+      "sort-packages": true,
+      "optimize-autoloader": true
+  },
+  "prefer-stable": true
+}
